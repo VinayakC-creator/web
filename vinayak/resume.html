@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Navbar styles */
+        .navbar {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .navbar a {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar Section -->
+    <div class="navbar">
+        <a href="#">RESUME</a>
+    </div>
+
+    <div class="container">
+        <div class="resume-box">
+            <!-- Profile Section -->
+            <div class="profile">
+                <img src="dev4.jpg" alt="Profile Picture" class="profile-img">
+                <h2>Welcome, <?php echo $_SESSION['user']; ?>!</h2>
+                <p class="intro">This is your resume page. You can add your personal information here.</p>
+            </div>
+
+            <!-- Personal Information -->
+            <div class="resume-details">
+                <h3>Personal Information</h3>
+                <p><span>Name:</span> VINAYAK C</p>
+                <p><span>Email:</span> vinay740ir@gmail.com</p>
+                <p><span>Phone:</span> 8431190227</p>
+                <p><span>Address:</span> Mallasandra,KSSEM</p>
+            </div>
+
+            <!-- Education Section -->
+            <div class="resume-section">
+                <h3>Education</h3>
+                <div class="education-item">
+                    <h4>Bachelor of Science in Computer Science</h4>
+                    <p><span>University:</span> VTU  University</p>
+                    <p><span>Year:</span> 2020 - 2026</p>
+                    <p><span>Description:</span> Focused on web development, database management, and software engineering principles.</p>
+                </div>
+            </div>
+
+            <!-- Work Experience Section -->
+            <div class="resume-section">
+                <h3>Work Experience</h3>
+                <div class="experience-item">
+                    <h4>Web Developer</h4>
+                    <p><span>Company:</span> Cognizant Technologies</p>
+                    <p><span>Duration:</span> 2021 - Present</p>
+                    <p><span>Responsibilities:</span> Designing and developing websites, maintaining and optimizing web applications, collaborating with teams for new feature implementations.</p>
+                </div>
+            </div>
+
+            <!-- Projects Section -->
+            <div class="resume-section">
+                <h3>Projects</h3>
+                <div class="project-item">
+                    <h4>Personal Portfolio</h4>
+                    <p><span>Description:</span> A personal portfolio website built with HTML, CSS, and JavaScript to showcase my work.</p>
+                    <a href="https://github.com/VinayakC-creator" target="_blank" class="btn">View Project</a>
+                </div>
+                <div class="project-item">
+                    <h4>Online Store</h4>
+                    <p><span>Description:</span> An e-commerce website built using PHP, MySQL, and JavaScript for a small business.</p>
+                    <a href="https://www.hostinger.in/website-builder?msclkid=02bbdce0cc9c115ebd38bbb6a4083a28&utm_source=bing&utm_medium=cpc&utm_campaign=Generic-Website-Builder|NT:Bing|LO:IN&utm_term=website+builder&utm_content=Website+builder" target="_blank" class="btn">View Project</a>
+                </div>
+            </div>
+
+            <!-- Skills Section -->
+            <div class="resume-section">
+                <h3>Skills</h3>
+                <ul>
+                    <li><span>Programming Languages:</span> PHP, JavaScript, HTML, CSS</li>
+                    <li><span>Frameworks:</span> flask, Django, Flutter, Angular</li>
+                    <li><span>Databases:</span> MySQL, postgreSQL</li>
+                    <li><span>Other Skills:</span> Git, Docker, Agile Methodologies</li>
+                </ul>
+            </div>
+
+            <!-- Contact Information Section -->
+            <div class="resume-section">
+                <h3>Contact Information</h3>
+                <p><span>LinkedIn:</span> <a href="https://www.linkedin.com/in/vinayak-c-640861313/" target="_blank">linkedin.com/in/johndoe</a></p>
+                <p><span>GitHub:</span> <a href="https://github.com/VinayakC-creator" target="_blank">github.com/johndoe</a></p>
+                <p><span>Email:</span> johnwick@gmail.com</p>
+            </div>
+
+            <!-- Logout Button -->
+            <a href="index.html" class="btn">Logout</a>
+        </div>
+    </div>
+</body>
+</html>

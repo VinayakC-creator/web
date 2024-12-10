@@ -1,0 +1,104 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body Styling */
+body {
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container for center alignment */
+.container {
+    width: 100%;
+    max-width: 400px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Register Box Styling */
+.register-box {
+    text-align: center;
+}
+
+h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Input Textbox Styling */
+.textbox input {
+    padding: 12px;
+    font-size: 16px;
+    margin: 8px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    width: 100%;
+    outline: none;
+    transition: 0.3s;
+}
+
+/* Input Textbox Hover and Focus Effect */
+.textbox input:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 5px rgba(0, 128, 0, 0.3);
+}
+
+/* Submit Button Styling */
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 14px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Link Styling for Login */
+p {
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+        width: 90%;
+    }
+}
